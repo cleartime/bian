@@ -1,0 +1,29 @@
+{
+  "name": "bian",
+  "version": "1.0.0",
+  "description": "bian",
+  "main": "index.js",
+  "scripts": {
+    "dev": "babel-node ./index.js --plugins @babel/plugin-transform-modules-commonjs --debug-brk ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cleartime/bian.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cleartime/bian/issues"
+  },
+  "homepage": "https://github.com/cleartime/bian#readme",
+  "dependencies": {
+    "axios": "^0.19.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/node": "^7.10.1",
+    "@babel/plugin-transform-modules-commonjs": "^7.10.1"
+  }
+}
