@@ -1,3 +1,2 @@
-import sept from './sept'
-debugger
-console.log(sept)
+import Sept from './sept.js'
+Sept.init()
