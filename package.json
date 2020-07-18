@@ -1,31 +1,26 @@
 {
-  "name": "bian",
+  "name": "wobsocketapi",
   "version": "1.0.0",
-  "description": "bian",
-  "main": "index.js",
+  "description": "",
+  "main": "test.js",
   "scripts": {
-    "dev": "nodemon --exec babel-node --inspect-brk=9229 ./index.js --plugins @babel/plugin-transform-modules-commonjs",
+    "dev": "node ws.js",
+    "start": "ENV=dev ./node_modules/.bin/nodemon --harmony test.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/cleartime/bian.git"
-  },
-  "keywords": [],
-  "author": "",
+  "author": "xinming.zhang",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/cleartime/bian/issues"
-  },
-  "homepage": "https://github.com/cleartime/bian#readme",
   "dependencies": {
-    "axios": "^0.19.2",
-    "qs": "^6.9.4",
-    "ws": "^7.3.0"
+    "bluebird": "^3.3.1",
+    "config": "^1.28.1",
+    "crypto-js": "^3.1.9-1",
+    "moment": "^2.13.0",
+    "pako": "^1.0.6",
+    "redis": "^2.4.2",
+    "request": "^2.72.0",
+    "ws": "^3.2.0"
   },
-  "devDependencies": {
-    "@babel/core": "^7.10.2",
-    "@babel/node": "^7.10.1",
-    "@babel/plugin-transform-modules-commonjs": "^7.10.1"
+  "execMap": {
+    "js": "node –harmony"
   }
 }
